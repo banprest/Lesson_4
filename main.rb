@@ -187,13 +187,4 @@ class Main
       puts "#{id_train.number} #{num}"
     end
   end
-
-  def sett
-    create_station('moscva')
-    create_station('piter')
-    create_route(0, 1)
-    create_train(321, :cargo)
-    create_train(412, :passenger)
-    info_station(0)
-  end
 end
