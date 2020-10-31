@@ -45,8 +45,15 @@ class Train
     @railcar.delete(railcar)
   end
 
+  def its_cargo_train?(railcar)
+    railcar.type == :cargo
+  end
+
+  def its_passenger_train?(railcar)
+    railcar.type == :passenger
+  end
+
   protected
-  attr_writer :current_station
 
   def add_railcar(railcar)
     @railcar << railcar
